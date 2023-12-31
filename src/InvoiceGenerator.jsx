@@ -106,7 +106,7 @@ const InvoiceGenerator = () => {
 								onChange={handleInputChange}
 							/>
 						</FormGroup>
-						<h3>Items:</h3>
+						<h6 className="text-underline">Items:</h6>
 						{invoiceData.items.map((item, index) => (
 							<div key={index}>
 								<FormGroup>
@@ -141,13 +141,30 @@ const InvoiceGenerator = () => {
 								</FormGroup>
 							</div>
 						))}
-						<Button color="primary" onClick={handleItemAdd}>
-							Add Item
-						</Button>
+						<div
+							style={{
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+							}}
+						>
+							<Button color="primary" onClick={handleItemAdd}>
+								Add Item
+							</Button>
+						</div>
 						<br />
-						<Button color="success" onClick={generateInvoice}>
-							Generate Invoice
-						</Button>
+						<br />
+						<div
+							style={{
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+							}}
+						>
+							<Button color="success" onClick={generateInvoice}>
+								Generate Invoice
+							</Button>
+						</div>
 					</Form>
 				</CardBody>
 			</Card>
