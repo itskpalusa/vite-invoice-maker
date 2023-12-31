@@ -1,4 +1,3 @@
-import React from "react";
 import InvoiceGenerator from "./InvoiceGenerator";
 import "bootstrap/dist/css/bootstrap.min.css";
 
